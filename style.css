@@ -4,7 +4,7 @@
     box-sizing: border-box;
     min-height: 100vh;
     font-family: 'Open Sans', sans-serif;
-   
+    overflow-x: hidden;
     
     
 }
@@ -33,6 +33,7 @@
     background-position: 80% 50%;
     background-size: cover;
     }
+    
 }
 
 @media (max-width: 1200px) {
@@ -40,5 +41,6 @@
         width: 100%;
 
     }
+  
     
 }

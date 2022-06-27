@@ -7,6 +7,7 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <title>Yoga Bird</title>
 </head>
 <body>
@@ -18,8 +19,6 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
             </button>
-           
-
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -36,9 +35,7 @@
                     </li>
                 </ul>
             </div>
-
-        </div>
-        
+        </div>   
     </nav>
     <!-- navbar end -->
 
@@ -65,16 +62,14 @@
                 <h2 class="mt-5">Yoga Bird,</h2>
                 <h2 class="mb-4 pb-5">Always on the move...</h2>
             </div>
-            <iframe class="container-fluid" width="1080" height="615px" src="https://www.youtube.com/embed/LqXZ628YNj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
+            <iframe class="container-fluid" width="1080" height="615px" src="https://www.youtube.com/embed/LqXZ628YNj4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
         </div>
-
     </section>
 
     <!-- about us end -->
 
     <!-- classes start -->
-    <section class="text-center text-lg-start py-3">   
+    <section class="text-center text-lg-start py-5" id="classes">   
         <div class="container py-5">
             <div class="row align-items-end justify-content-between">
                 <div class="col-lg-4"> 
@@ -163,7 +158,7 @@
     <!-- classes end -->
 
     <!-- schedule start -->
-    <section class="bg-secondary my-5">
+    <section class="bg-secondary my-5" id="schedule">
         <div class="container py-5">
             <div class="row d-flex justify-content-between align-items-center">
                 <div class="col-md-6 col-lg-7">
@@ -175,12 +170,11 @@
                     <button type="button" class="btn btn-dark btn-lg mt-5 px-4">Find a class</button>
                 </div>    
             </div>
-
         </div>
 
         <!-- class schedule form -->
-        <div class="container py-5">
-              <table class="table table-success table-striped">
+        <div class="container py-5 d-none d-lg-block">
+            <table class="table table-success table-striped">
                 <thead>
                   <tr class="text-center">
                     <th class="py-5" scope="col"></th>
@@ -265,11 +259,104 @@
                     <td class="py-4 text-center">--</td>
                   </tr>
                 </tbody>
-              </table>  
+            </table>  
         </div>
     </section>
 
     <!-- schedule end -->
+
+    <!-- Prices start -->
+    <section class="text-center my-5 py-5" id="pricing">
+        <div class="container py-5">
+            <div>
+                <h2 class="py-5">Class Packages</h2>
+            </div>
+            <div class="container my-5">
+                <div class="row g-5 d-flex">
+                    <div class="col-lg-4">
+                        <div class="card mb-4 mx-auto" style="width: 18rem;">
+                            <div class="card-body bg-dark text-light">
+                                <div class="container">
+                                    <h4 class="card-title p-4 border-bottom border-light">One Month Unlimited</h4>
+                                    <h4 class="card-title pt-4">$150</h4>
+                                    <p class="card-text text-start pt-4">This expires one month from date of purchase</p>
+                                    <a href="#" class="btn btn-outline-light btn-md my-3 px-5">BOOK</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card mb-4 mx-auto" style="width: 18rem;">
+                            <div class="card-body bg-dark text-light">
+                                <div class="container">
+                                    <h4 class="card-title  p-4 border-bottom border-light">Sit Months Unlimited</h4>
+                                    <h4 class="card-title pt-4">$650</h4>
+                                    <p class="card-text text-start pt-4">This expires six months from date of purchase</p>
+                                    <a href="#" class="btn btn-outline-light btn-md my-3 px-5">BOOK</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card mb-4 mx-auto" style="width: 18rem;">
+                            <div class="card-body bg-dark text-light">
+                                <div class="container">
+                                    <h4 class="card-title p-4 border-bottom border-light">Twelve Months Unlimited</h4>
+                                    <h4 class="card-title pt-4">$1200</h4>
+                                    <p class="card-text text-start pt-4">This expires twelve months from date of purchase</p>
+                                    <a href="#" class="btn btn-outline-light btn-md my-3 px-5">BOOK</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Prices end -->
+
+    <!-- contact us start -->
+    <section class="my-5 py-5 bg-dark text-center text-light" id="contactus">
+        <div class="container my-5">
+            <div class="row g-4">
+                <div class="col-8 col-lg-4 text-lg-start mx-auto">
+                    <h2 class="my-5">Join us</h2>
+                    
+                    <div class="my-3 text-start">
+                        <label class="form-label fs-5">Name:</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3 text-start">
+                        <label class="form-label fs-5">Email:</label>
+                        <input type="email" class="form-control">
+                    </div>
+                    
+                    <button type="button" class="btn btn-outline-light btn-lg my-4 px-5">Subscribe</button>
+                </div>
+    
+                <div class="col-8 col-lg-4 text-lg-start mx-auto">
+                    <h2 class="my-5">Get in touch with us</h2>
+                    <p class="pt-2">Email: contact@yogabird.com</p>
+                    <p class="py-2">Tel: 908-088-0808</p>
+                    <p>Address: 123 Main St, Chatham NJ 07974</p>
+                        
+                    <h4 class="my-3 pt-4">Follow us</h4>
+                    <a href="#"><i class="bi bi-twitter text-light me-3 fs-4"></i></a>
+                    <a href="#"><i class="bi bi-instagram text-light mx-3 fs-4"></i></a>
+                    <a href="#"><i class="bi bi-facebook text-light mx-3 fs-4"></i></a>
+                    <a href="#"><i class="bi bi-youtube text-light mx-3 fs-4"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact us end -->
+
+    <!-- footer -->
+    <section class="text-secondary p-3 text-center">
+        <div class="container">
+            <p>Copyright &copy; 2022 Yoga Bird</p>
+        </div>
+    </section>
 
 
     <!-- JavaScript Bundle with Popper -->
